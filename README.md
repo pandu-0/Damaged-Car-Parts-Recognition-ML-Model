@@ -40,9 +40,8 @@ Now let's **create** a Cloud Storage Bucket by using the `gsutil` command in the
 gsutil mb -p $PROJECT_ID -c standard -l "REGION" gs://${BUCKET}
 ```
 
-> **Explanation**:  
-This uses the `gsutil` command to make a bucket (`mb`) of a `standard` storage class in the current `REGION` under the given 
-project (provided its ID: `$PROJECT_ID`). In `gs://${BUCKET}`, `gs://` is the Google Cloud Storage scheme and `${BUCKET}` is the name of our bucket. In this case, I'm using the project name as the bucket name - you can choose not to, but make sure to update the `BUCKET` variable using the `export` command.
+> [!IMPORTANT]  
+> This uses the `gsutil` command to make a bucket (`mb`) of a `standard` storage class in the current `REGION` under the given project (provided its ID: `$PROJECT_ID`). In `gs://${BUCKET}`, `gs://` is the Google Cloud Storage scheme and `${BUCKET}` is the name of our bucket. In this case, I'm using the project name as the bucket name - you can choose not to, but make sure to update the `BUCKET` variable using the `export` command.
 
 Our Storage bucket is ready, so it's time to get our dataset!
 
@@ -99,7 +98,7 @@ First let's enable some APIs (boring):
 2. Click <span style="color:DodgerBlue">**Enable All Recommended APIs**</span> on the page.
 
 > [!WARNING]
->The GCP interface is constantly changing so this might not be exact way to enable the APIs or Create the Dataset (or in general), but you can find out by simply googling.
+> The GCP interface is constantly changing so this might not be exact way to enable the APIs or Create the Dataset (or in general), but you can find out by simply googling.
 
 With that out of the way, let's make the Dataset (finally!):
 
@@ -150,6 +149,7 @@ Click on the <span style="color:DodgerBlue">**Analyze**</span> tab (next to Brow
 
 Click <span style="color:DodgerBlue">**Start Training**</span> to begin training! - took me 2 hours :((
 
+>[!IMPORTANT]
 > We choose the **AutoML** option so GCP's Vertex AI automatically chooses Machine Learning Algorithms to create a custom model for us. **High Accuracy** was chosen for, well, high accuray - and lower latency. **Node hours** is the amount of time we allot to the machine to complete our job.
 
 ---
