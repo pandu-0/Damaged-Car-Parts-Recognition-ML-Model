@@ -136,6 +136,10 @@ Go to the <span style="color:DodgerBlue">Browse</span> tab, and verify that all 
 
 It's about time we train our Model!!
 
+https://github.com/pandu-0/Damaged-Car-Parts-Recognition-ML-Model/assets/89210693/38d40f4a-8d84-46bf-a889-e8369f3552cc
+
+
+
 ---
 
 ### 7. Train your model
@@ -147,6 +151,12 @@ Click on the <span style="color:DodgerBlue">**Analyze**</span> tab (next to Brow
 <video width="320*3" height="240*3" controls>
     <source src="./assets/train-model.mp4" type="video/mp4">
 </video>
+
+
+
+https://github.com/pandu-0/Damaged-Car-Parts-Recognition-ML-Model/assets/89210693/c0689f05-6653-4d67-b8ad-3f55bfb008f6
+
+
 
 Click <span style="color:DodgerBlue">**Start Training**</span> to begin training! - took me 2 hours :((
 
