@@ -98,7 +98,8 @@ First let's enable some APIs (boring):
 1. Open <span style="color:DodgerBlue">**Vertex AI**</span> > <span style="color:DodgerBlue">**Dashboard**</span> by finding it in the Side Menu (you might need to open the "More Products" dropdown).
 2. Click <span style="color:DodgerBlue">**Enable All Recommended APIs**</span> on the page.
 
-> <span style="color:red">**Warning**</span>: The GCP interface is constantly changing so this might not be exact way to enable the APIs or Create the Dataset (or in general), but you can find out by simply googling.
+> [!WARNING]
+>The GCP interface is constantly changing so this might not be exact way to enable the APIs or Create the Dataset (or in general), but you can find out by simply googling.
 
 With that out of the way, let's make the Dataset (finally!):
 
@@ -120,7 +121,8 @@ Let's connect the images we copied to our dataset!
 3. Follow the prompts to navigate to your storage bucket and click your `data.csv` file. Click <span style="color:DodgerBlue">**Select**</span>.
 4. Once you see a <span style="color:ForestGreen">green</span> checkbox to the left of the file path, click <span style="color:DodgerBlue">**Continue**</span>.
 
-> <span style="color:tan">Note:</span> Uploading can take around 10 minutes!
+> [!NOTE]
+> Uploading can take around 10 minutes!
 
 ---
 
