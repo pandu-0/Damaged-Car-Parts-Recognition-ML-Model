@@ -41,7 +41,7 @@ gsutil mb -p $PROJECT_ID -c standard -l "REGION" gs://${BUCKET}
 ```
 
 > [!IMPORTANT]  
-> This uses the `gsutil` command to make a bucket (`mb`) of a `standard` storage class in the current `REGION` under the given project (provided its ID: `$PROJECT_ID`). In `gs://${BUCKET}`, `gs://` is the Google Cloud Storage scheme and `${BUCKET}` is the name of our bucket. In this case, I'm using the project name as the bucket name - you can choose not to, but make sure to update the `BUCKET` variable using the `export` command.
+> This uses the `gsutil` command to make a bucket (`mb`) of a `standard` storage class in the current `REGION` under the given project (provided its ID: `$PROJECT_ID`). In `gs://${BUCKET}`, `gs://` is the Google Cloud Storage scheme and `${BUCKET}` refers to the name of our bucket. In this case, I'm using the project name as the bucket name - you can choose not to, but make sure to update the `BUCKET` variable using the `export` command.
 
 Our Storage bucket is ready, so it's time to get our dataset!
 
@@ -71,7 +71,7 @@ gsutil cp gs://car_damage_lab_metadata/data.csv .
 ```
 
 > [!IMPORTANT]
-> `data.csv` contains the file path to our images so Vertex AI can locate them; however, the parent directory has changed to our Storage Bucket, so we must update that in the csv file as well.
+> `data.csv` contains the file path to our images so Vertex AI can locate them; however, the parent directory has changed to our Storage Bucket, so we must update that in the csv file as well. `data.csv` also contains a column which tells Vetex AI if the image is supposed to be used for TEST, TRAIN, or VALIDATION.
 
 Run the following `sed` command to subsitute the parent directory of the images with our Storage Bucket:
 
