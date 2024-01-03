@@ -130,7 +130,7 @@ Let's connect the images we copied to our dataset!
 
 Some images might be labled incorrectly, so let's correct them if they are.
 
-Go to the <span style="color:DodgerBlue">Browse</span> tab, and verify that all are correctly labaled correctly. If not simply click on them and change the lable on the right side.
+Go to the <span style="color:DodgerBlue">Browse</span> tab, and verify that all are correctly labaled correctly. If not simply click on them and change the lable on the left side.
 
 ![inspect-images](./assets/inspect-images.png)
 
