@@ -70,6 +70,7 @@ First, let's copy `data.csv` to our current directory in the Shell window by run
 gsutil cp gs://car_damage_lab_metadata/data.csv .
 ```
 
+> [!IMPORTANT]
 > `data.csv` contains the file path to our images so Vertex AI can locate them; however, the parent directory has changed to our Storage Bucket, so we must update that in the csv file as well.
 
 Run the following `sed` command to subsitute the parent directory of the images with our Storage Bucket:
@@ -179,7 +180,5 @@ We can see the classification probabilities on the right side.
 At last, we have completed making a **cutom ML model** using **Vertex AI AutoML Vision** in GCP.
 
 Thank you for reading :))
-
----
 
 
